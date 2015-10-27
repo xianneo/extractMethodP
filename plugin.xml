@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <viewerContribution
+            id="cn.csu.plusin.extractMethodP.viewerContribution"
+            targetID="#CompilationUnitEditorContext">
+         <menu
+               id="cn.csu.plusin.extractMethodP.popupMenu"
+               label="ExtractMethod+"
+               path="Additions">
+         </menu>
+         <action
+               class="cn.csu.plusin.extractmethodp.popup.actions.RefactoringAction"
+               id="cn.csu.plusin.extractMethodP.refactoringAction"
+               label="RefactoringWizard"
+               menubarPath="cn.csu.plusin.extractMethodP.popupMenu/group1">
+         </action>
+      </viewerContribution>
+   </extension>
+
+</plugin>
